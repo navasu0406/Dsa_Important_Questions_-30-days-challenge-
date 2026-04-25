@@ -25,6 +25,8 @@ public class Second_Largest_Element {
             }  
         }
 
-        return secondmax;
+       if(secondmax==Integer.MIN_VALUE)return -1;
+
+       return secondmax;
     }
 }

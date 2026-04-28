@@ -9,22 +9,19 @@ public class Max_Consicutive_ones {
     }
 
     public static int solution(int[] arr) {
-        int max=0;
-
-        int count=0;
-
-        for(int i=0; i<arr.length; i++)
-        {
+       int max=0;
+       int count=0;
+       for(int i=0; i<arr.length; i++)
+       {
             if(arr[i]==1)
             {
                 count++;
                 max=Math.max(max,count);
             }
-            if(arr[i]!=1)
-            {
+            else{
                 count=0;
             }
-        }
+       }
 
         return max;
     }

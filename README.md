@@ -1,1 +1,4 @@
 This repository contains my practice of Data Structures and Algorithms (DSA) using Java, along with learning and applying Git and GitHub for version control. It reflects my progress, consistency, and efforts to improve problem-solving and coding skills over time.
+
+Ill make sure to add problems daily for next 30 days till i get placed
+

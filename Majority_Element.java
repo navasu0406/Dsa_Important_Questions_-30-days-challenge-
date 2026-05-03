@@ -11,18 +11,22 @@ public class Majority_Element {
 
     public static int solution(int[] arr) {
         
-        HashMap<Integer,Integer> map=new HashMap<>();
+        int ele=arr[0];
+        int count=0;
 
         for(int i=0; i<arr.length; i++)
         {
-            map.put(arr[i],map.getOrDefault(arr[i],0)+1);
-
-            if(map.get(arr[i])>arr.length/2)
+            if(count==0)
             {
-                return arr[i];
+                ele=arr[i];
+            }
+            if(arr[i]==ele){
+                count++;
+            }
+            else{
+                count--;
             }
         }
-        return -1;
-
+        return ele;
     }
 }

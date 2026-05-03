@@ -11,42 +11,33 @@ public class Sort_0_1_2 {
     }
 
     public static void solution(int[] arr) {
-       int zero=0;
-       int one=0;
-       int two=0;
+       int start=0;
+       int mid=0;
+       int end=arr.length-1;
 
-       for(int i=0; i<arr.length ;i++)
+       while(mid<=end)
        {
-          if(arr[i]==0)
+          switch(arr[mid])
           {
-            zero++;
+            case 0:
+               swap(arr,start,mid);
+               start++;
+               mid++;
+               break;
+            case 1:
+               mid++;
+               break;
+            case 2:
+              swap(arr,mid,end);
+              end--;
+              break;
           }
-          else if(arr[i]==1)
-          {
-            one++;
-          }
-          else{
-            two++;
-          }
        }
-       int k=0;
-       while(zero!=0)
-       {
-        arr[k]=0;
-        zero--;
-        k++;
-       }
-       while(one!=0)
-       {
-        arr[k]=1;
-        one--;
-        k++;
-       }
-       while(two!=0)
-       {
-        arr[k]=2;
-        two--;
-        k++;
-       }
+    }
+    public static void swap(int [] arr,int a,int b)
+    {
+         int temp=arr[a];
+         arr[a]=arr[b];
+         arr[b]=temp;
     }
 }

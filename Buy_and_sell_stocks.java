@@ -1,3 +1,4 @@
+//Two pointer problem
 public class Buy_and_sell_stocks {
     public static void main(String[] args) {
 

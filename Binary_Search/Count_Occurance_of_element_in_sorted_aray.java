@@ -1,3 +1,4 @@
+//Use binary search 2 times to find first and last orrcurence and return the diffrence of those
 public class Count_Occurance_of_element_in_sorted_aray {
 public static void main(String[] args) {
 
